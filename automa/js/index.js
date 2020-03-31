@@ -92,7 +92,7 @@ function updateStatus(y,i,status) {
                     }
                    
                     
-                    function core(hor,ver) {
+                    function core(ver,hor) {
                     var collectInfo=[];
                     for(y=0;y<ver;y++) { 
                         collectInfo[y]=new Array();     
