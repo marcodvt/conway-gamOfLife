@@ -46,10 +46,10 @@ $col=40; ?>
                                   </ul>
                                 </div> 
                                 <? if($_GET["pattern"]=="custom") { ?>
-                       
+                                <div style="margin-top: 10px">
                                 <button class="btn btn-lg btn-success" onclick="javascript: startInterval()">START</button >
                                 <button class="btn btn-lg btn-success" onclick="javascript: location.href='play.php?pattern=custom'">CLEAR</button >
-                                                     <?  } ?>
+                                  </div>                   <?  } ?>
                             
                             </div>
                        <div class="col">
@@ -60,6 +60,7 @@ $accese=router($_GET["pattern"]);
                     
                      for($y=0;$y<$col;$y++) { ?>
                      <div class="cellHor">
+                     
                      <? for($i=0;$i<$row;$i++) {?>
                       
                         <div class="cell<? echo $accese[$y][$i] ?>" id="cell_<? echo $y ?>_<? echo $i ?>"></div>
